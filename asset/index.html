@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 
 <head>
-    
-</head> 
+    <script>
+        const web = new WebSocket("ws:///api/websocket")
+        web.onmessage("reload", () => {
+            location.reload()
+        })
+    </script>
+</head>
 
 <body>
-    
+    <div class="video-container">
+        <video playsinline autoplay muted loop
+            <source type="video/mp4" src="/video.mp4">
+        </video>
+    </div>
 </body>
