@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 
 <head>
+    <style>
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
     <script>
         const web = new WebSocket("ws:///api/websocket")
         web.onmessage("reload", () => {
@@ -11,8 +21,7 @@
 
 <body>
     <div class="video-container">
-        <video playsinline autoplay muted loop
-            <source type="video/mp4" src="/video.mp4">
+        <video playsinline autoplay muted loop <source type="video/mp4" src="/video.mp4">
         </video>
     </div>
 </body>

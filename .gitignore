@@ -1,3 +1,4 @@
 .vscode/**
-asset/video
+asset/video.mp4
 deno.lock
+yt-dlp_linux
